@@ -3,31 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Прогноз погоды · Visual Crossing</title>
+    <title>Погода · стиль Apple</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <!-- Заголовок -->
+        <!-- Шапка -->
         <h1>🌤 Погода</h1>
         
-        <!-- Большой поиск по центру -->
+        <!-- Поиск (всегда по центру) -->
         <div class="search-wrapper">
-            <input type="text" id="cityInput" placeholder="Введите город (например, Moscow)" value="Moscow">
+            <input type="text" id="cityInput" placeholder="Город (например, Moscow)" value="Moscow">
             <button id="searchBtn">Найти</button>
         </div>
 
-        <!-- Текущая погода -->
+        <!-- 1. ТЕКУЩАЯ ПОГОДА (центр) -->
         <div id="currentWeather" class="weather-card">
-            <!-- Заполняется JS -->
+            <!-- Текущая погода -->
         </div>
 
-        <!-- Прогноз на 5 дней -->
+        <!-- 2. ПРОГНОЗ НА 5 ДНЕЙ (теперь сразу под погодой) -->
         <h2 class="forecast-title">📅 Прогноз на 5 дней</h2>
         <div id="forecast" class="forecast-container">
-            <!-- Заполняется JS -->
+            <!-- Карточки прогноза -->
+        </div>
+
+        <!-- 3. ВИКИПЕДИЯ (теперь в самом низу) -->
+        <div id="cityInfo" class="wiki-card">
+            <!-- Информация из Википедии -->
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>

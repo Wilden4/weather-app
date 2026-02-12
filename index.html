@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прогноз погоды · Visual Crossing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Заголовок -->
+        <h1>🌤 Погода</h1>
+        
+        <!-- Большой поиск по центру -->
+        <div class="search-wrapper">
+            <input type="text" id="cityInput" placeholder="Введите город (например, Moscow)" value="Moscow">
+            <button id="searchBtn">Найти</button>
+        </div>
+
+        <!-- Текущая погода -->
+        <div id="currentWeather" class="weather-card">
+            <!-- Заполняется JS -->
+        </div>
+
+        <!-- Прогноз на 5 дней -->
+        <h2 class="forecast-title">📅 Прогноз на 5 дней</h2>
+        <div id="forecast" class="forecast-container">
+            <!-- Заполняется JS -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
